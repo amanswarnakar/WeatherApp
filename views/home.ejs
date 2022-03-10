@@ -1,0 +1,21 @@
+<%- include("partials/header"); -%>
+
+<div class="container">
+  <div class="card">
+    <div class="input-form">
+      <form action="/" method="post" class="form-control">
+        <label for="cityName">Enter City name</label>
+        <input
+          name="cityName"
+          class="form-controls"
+          type="text"
+          required
+          autocomplete="off"
+        />
+        <button class="form-controls btn" type="submit">GO</button>
+      </form>
+    </div>
+  </div>
+</div>
+
+<%- include("partials/footer"); -%>

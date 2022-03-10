@@ -1,0 +1,22 @@
+<%- include("partials/header"); -%>
+
+<div class="contiainer">
+  <div class="details">
+    <img
+      src="images/<%= bgImage %>.avif"
+      alt=""
+      class="bg-image"
+    />
+    <div class="text">
+      <h1><%= query %></h1>
+      <h2>Temperature: <%= temp %> °C</h3>
+      <p>Maximum temperature: <%= temp_max %> °C</p>
+      <p>Minimum temperature: <%= temp_min %> °C</p>
+      <p>Humidity: <%= humidity %>%</p>
+      <p>Weather description: <%= weatherDescription %></p>
+      <img class="weather-icon" src="<%= iconURL %>" alt="Weather Icon" />
+    </div>
+  </div>
+</div>
+
+<%- include("partials/footer"); -%>
